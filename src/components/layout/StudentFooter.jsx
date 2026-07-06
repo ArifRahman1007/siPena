@@ -10,10 +10,10 @@ export default function StudentFooter() {
           <p className="font-sans text-xs tracking-normal text-outline">© 2026 SiPena. Sistem Penerimaan Peserta Didik Baru.</p>
         </div>
         <div className="flex flex-wrap justify-center gap-6">
-          <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Privacy Policy</Link>
-          <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Terms of Service</Link>
-          <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Help Center</Link>
-          <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Contact Support</Link>
+          <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Kebijakan Privasi</Link>
+          <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Ketentuan Layanan</Link>
+          <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Pusat Bantuan</Link>
+          <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Hubungi Dukungan</Link>
         </div>
       </div>
     </footer>
