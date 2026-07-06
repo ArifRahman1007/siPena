@@ -1288,7 +1288,10 @@ export default function Dashboard() {
               </p>
 
               <button
-                onClick={() => window.open('mailto:admin@ypptgarut.sch.id?subject=Bantuan%20Pendaftaran', '_blank')}
+                onClick={() => {
+                  const message = `Halo Admin PPDB SiPena, saya ${fullName} (No. Pendaftaran: ${registrationNumber}) butuh bantuan terkait pendaftaran.`;
+                  window.open(`https://wa.me/6285624963293?text=${encodeURIComponent(message)}`, '_blank');
+                }}
                 className="bg-white text-primary px-4 py-2.5 rounded-xl text-sm font-bold hover:scale-95 transition-all"
               >
                 Hubungi Support
