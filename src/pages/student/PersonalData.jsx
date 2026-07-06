@@ -5,7 +5,7 @@ const STEPS = [
   { label: 'Data Pribadi', icon: 'person' },
   { label: 'Orang Tua', icon: 'family_restroom' },
   { label: 'Berkas', icon: 'folder_open' },
-  { label: 'Review', icon: 'fact_check' },
+  { label: 'Tinjau', icon: 'fact_check' },
 ]
 
 function StepProgress({ current }) {
@@ -225,7 +225,7 @@ export default function PersonalData() {
         <div className="mt-6 text-center">
           <p className="text-xs text-on-surface-variant">
             Butuh bantuan?{' '}
-            <Link className="text-primary font-semibold hover:underline" to="#">Hubungi Help Center</Link>
+            <Link className="text-primary font-semibold hover:underline" to="#">Hubungi Pusat Bantuan</Link>
           </p>
         </div>
       </main>

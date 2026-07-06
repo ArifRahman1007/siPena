@@ -215,11 +215,11 @@ const getDocumentUrl = (fieldName) => {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
             <div className="space-y-2">
               <span className="text-primary font-bold tracking-widest text-xs uppercase">
-                Step 4 of 4
+                Langkah 4 dari 4
               </span>
 
               <h1 className="text-2xl md:text-xl font-extrabold tracking-tight text-on-surface">
-                Review &amp; Submit
+                Tinjau &amp; Kirim
               </h1>
 
               <p className="text-on-surface-variant max-w-xl body-md">
@@ -238,7 +238,7 @@ const getDocumentUrl = (fieldName) => {
               <div className="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_4px_12px_rgba(26,28,28,0.03)] border-t-2 border-primary-fixed-dim">
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-xl font-bold tracking-tight">
-                    Personal Data
+                    Data Pribadi
                   </h2>
 
                   <button
@@ -300,7 +300,7 @@ const getDocumentUrl = (fieldName) => {
               <div className="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_4px_12px_rgba(26,28,28,0.03)]">
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-xl font-bold tracking-tight">
-                    Parent Data
+                    Data Orang Tua
                   </h2>
 
                   <button
@@ -355,7 +355,7 @@ const getDocumentUrl = (fieldName) => {
               <div className="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_4px_12px_rgba(26,28,28,0.03)]">
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-xl font-bold tracking-tight">
-                    Uploaded Documents
+                    Dokumen yang Diunggah
                   </h2>
 
                   <button
@@ -379,7 +379,7 @@ const getDocumentUrl = (fieldName) => {
                         {getDocumentName('photo')}
                       </p>
                       <p className="text-xs text-on-surface-variant">
-                        Uploaded
+                        Berhasil diunggah
                       </p>
 
                       {getDocumentUrl('photo') && (
@@ -396,7 +396,7 @@ const getDocumentUrl = (fieldName) => {
                       </div>
 
                       <span className="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">
-                        Ready
+                        Siap
                       </span>
                     </div>
                   )}
@@ -413,13 +413,13 @@ const getDocumentUrl = (fieldName) => {
                             {getDocumentName('reportCard')}
                           </p>
                           <p className="text-xs text-on-surface-variant">
-                            Uploaded
+                            Berhasil diunggah
                           </p>
                         </div>
                       </div>
 
                       <span className="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">
-                        Ready
+                        Siap
                       </span>
                     </div>
                   )}
@@ -436,13 +436,13 @@ const getDocumentUrl = (fieldName) => {
                             {getDocumentName('healthCert')}
                           </p>
                           <p className="text-xs text-on-surface-variant">
-                            Uploaded
+                            Berhasil diunggah
                           </p>
                         </div>
                       </div>
 
                       <span className="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">
-                        Ready
+                        Siap
                       </span>
                     </div>
                   )}
@@ -462,7 +462,7 @@ const getDocumentUrl = (fieldName) => {
               <div className="sticky top-24 space-y-4">
                 <div className="bg-surface-container-highest p-6 rounded-2xl shadow-xl">
                   <h3 className="text-lg font-bold mb-4">
-                    Submission Declaration
+                    Pernyataan Pendaftaran
                   </h3>
 
                   <div className="flex gap-4 mb-6">
@@ -522,7 +522,7 @@ const getDocumentUrl = (fieldName) => {
                     <p className="text-xs text-on-surface-variant">
                       Butuh bantuan? Hubungi{' '}
                       <Link className="text-primary font-bold" to="#">
-                        Help Center
+                        Pusat Bantuan
                       </Link>
                     </p>
                   </div>
