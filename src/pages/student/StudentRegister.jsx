@@ -24,7 +24,7 @@ export default function StudentRegister() {
       case 'auth/invalid-email':
         return 'Format email tidak valid. Periksa kembali email yang dimasukkan.'
       case 'auth/weak-password':
-        return 'Password terlalu lemah. Gunakan minimal 6 karakter.'
+        return 'Kata sandi terlalu lemah. Gunakan minimal 6 karakter.'
       case 'auth/operation-not-allowed':
         return 'Pendaftaran akun sementara dinonaktifkan. Hubungi admin.'
       case 'auth/network-request-failed':
@@ -43,12 +43,12 @@ export default function StudentRegister() {
     }
 
     if (password.length < 6) {
-      toast.error('Password minimal 6 karakter.')
+      toast.error('Kata sandi minimal 6 karakter.')
       return
     }
 
     if (password !== confirmPassword) {
-      toast.error('Konfirmasi password tidak cocok.')
+      toast.error('Konfirmasi kata sandi tidak cocok.')
       return
     }
 
@@ -161,21 +161,21 @@ export default function StudentRegister() {
                 </p>
                 <p className="text-xs text-amber-700 mb-3 leading-relaxed">
                   Akun dengan email <span className="font-mono font-bold">{email}</span> sudah ada.
-                  Silakan login langsung, atau reset password jika kamu lupa.
+                  Silakan masuk langsung, atau reset kata sandi jika kamu lupa.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-2">
                   <a
                     href={`/login-siswa`}
                     className="flex-1 py-2 px-3 rounded-xl bg-primary text-on-primary text-xs font-bold text-center hover:opacity-90 transition-opacity"
                   >
-                    Login Sekarang
+                    Masuk Sekarang
                   </a>
                   <a
                     href={`/login-siswa`}
                     onClick={() => sessionStorage.setItem('resetEmail', email)}
                     className="flex-1 py-2 px-3 rounded-xl bg-amber-100 text-amber-800 text-xs font-bold text-center hover:bg-amber-200 transition-colors"
                   >
-                    Lupa Password?
+                    Lupa Kata Sandi?
                   </a>
                 </div>
               </div>
@@ -236,7 +236,7 @@ export default function StudentRegister() {
           {/* Password */}
           <div>
             <label className="block text-xs font-semibold text-on-surface mb-1">
-              Password
+              Kata Sandi
             </label>
             <div className="relative">
               <input
@@ -263,7 +263,7 @@ export default function StudentRegister() {
           {/* Konfirmasi Password */}
           <div>
             <label className="block text-xs font-semibold text-on-surface mb-1">
-              Konfirmasi Password
+              Konfirmasi Kata Sandi
             </label>
             <div className="relative">
               <input
@@ -275,7 +275,7 @@ export default function StudentRegister() {
                       ? 'border-green-400 focus:ring-green-200'
                       : 'border-outline-variant focus:ring-primary/20'
                 }`}
-                placeholder="Ulangi password"
+                placeholder="Ulangi kata sandi"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 autoComplete="new-password"
@@ -293,12 +293,12 @@ export default function StudentRegister() {
             </div>
             {confirmPassword && confirmPassword !== password && (
               <p className="text-xs text-red-500 mt-1.5 font-medium">
-                Password tidak cocok
+                Kata sandi tidak cocok
               </p>
             )}
             {confirmPassword && confirmPassword === password && (
               <p className="text-xs text-green-600 mt-1.5 font-medium">
-                Password cocok ✓
+                Kata sandi cocok ✓
               </p>
             )}
           </div>
@@ -345,7 +345,7 @@ export default function StudentRegister() {
         <p className="text-center text-xs text-on-surface-variant mt-4">
           Sudah punya akun?{' '}
           <Link to="/login-siswa" className="font-bold text-primary hover:underline">
-            Login di sini
+            Masuk di sini
           </Link>
         </p>
       </section>

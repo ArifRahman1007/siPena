@@ -228,7 +228,7 @@ export default function StudentLogin() {
           </div>
 
           <h1 className="text-lg font-bold text-on-surface">
-            {resetMode ? 'Reset Password' : 'Login Siswa'}
+            {resetMode ? 'Reset Kata Sandi' : 'Masuk Siswa'}
           </h1>
 
           <p className="text-xs text-on-surface-variant mt-0.5">
@@ -276,7 +276,7 @@ export default function StudentLogin() {
               onClick={() => setResetMode(false)}
               className="w-full py-2 text-sm rounded-xl bg-surface-container text-on-surface font-bold hover:bg-surface-container-high active:scale-95 transition-all"
             >
-              Kembali ke Login
+              Kembali ke Halaman Masuk
             </button>
           </form>
         ) : (
@@ -299,21 +299,21 @@ export default function StudentLogin() {
             <div>
               <div className="flex items-center justify-between mb-2">
                 <label className="block text-sm font-bold text-on-surface">
-                  Password
+                  Kata Sandi
                 </label>
                 <button
                   type="button"
                   onClick={() => setResetMode(true)}
                   className="text-xs text-primary font-semibold hover:underline"
                 >
-                  Lupa password?
+                  Lupa kata sandi?
                 </button>
               </div>
               <div className="relative">
                 <input
                   type={showPassword ? 'text' : 'password'}
                   className="w-full px-3 py-2 pr-10 text-sm rounded-xl bg-surface-container border border-outline-variant outline-none focus:ring-2 focus:ring-primary/20"
-                  placeholder="Masukkan password"
+                  placeholder="Masukkan kata sandi"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   autoComplete="current-password"
@@ -342,7 +342,7 @@ export default function StudentLogin() {
                   Memproses...
                 </>
               ) : (
-                'Login'
+                'Masuk'
               )}
             </button>
 
