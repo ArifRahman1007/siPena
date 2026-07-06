@@ -25,12 +25,12 @@ export async function uploadToCloudinary(file, folder = 'recruit-hub') {
   }
 
   return {
-    url: data.secure_url,
-    publicId: data.public_id,
-    format: data.format,
-    resourceType: data.resource_type,
-    originalFilename: data.original_filename,
-    deleteToken: data.delete_token
+    url: data.secure_url || null,
+    publicId: data.public_id || null,
+    format: data.format || null,
+    resourceType: data.resource_type || null,
+    originalFilename: data.original_filename || null,
+    deleteToken: data.delete_token || null
   }
 }
 
