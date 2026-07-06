@@ -15,6 +15,8 @@ import Dashboard from './pages/student/Dashboard'
 import StudentLogin from './pages/student/StudentLogin'
 import StudentRegister from './pages/student/StudentRegister'
 import ProtectedStudentRoute from './components/auth/ProtectedStudentRoute'
+import PrivacyPolicy from './pages/student/PrivacyPolicy'
+import TermsOfService from './pages/student/TermsOfService'
 
 // Admin Area
 // Layouts
@@ -37,6 +39,8 @@ function App() {
         {/* Student Routes (Public & Standalone) */}
         <Route path="/" element={<Landing />} />
         <Route path="/signup" element={<Navigate to="/register-siswa" replace />} />
+        <Route path="/kebijakan-privasi" element={<PrivacyPolicy />} />
+        <Route path="/ketentuan-layanan" element={<TermsOfService />} />
 
         {/* Student Registration Flow (Wrapped in RegistrationLayout & Protected) */}
         <Route element={<ProtectedStudentRoute />}>
