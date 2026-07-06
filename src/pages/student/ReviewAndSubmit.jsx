@@ -521,9 +521,9 @@ const getDocumentUrl = (fieldName) => {
                   <div className="mt-6 pt-6 border-t border-outline-variant/30 text-center">
                     <p className="text-xs text-on-surface-variant">
                       Butuh bantuan? Hubungi{' '}
-                      <Link className="text-primary font-bold" to="#">
+                      <a className="text-primary font-bold" href="https://wa.me/6285624963293?text=Halo%20Admin%20PPDB%20SiPena%2C%20saya%20butuh%20bantuan%20terkait%20pendaftaran." target="_blank" rel="noreferrer">
                         Pusat Bantuan
-                      </Link>
+                      </a>
                     </p>
                   </div>
                 </div>

@@ -12,7 +12,7 @@ export default function StudentFooter() {
         <div className="flex flex-wrap justify-center gap-6">
           <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Kebijakan Privasi</Link>
           <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Ketentuan Layanan</Link>
-          <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Pusat Bantuan</Link>
+          <a className="text-outline hover:text-primary text-xs transition-colors" href="https://wa.me/6285624963293?text=Halo%20Admin%20PPDB%20SiPena%2C%20saya%20butuh%20bantuan%20terkait%20pendaftaran." target="_blank" rel="noreferrer">Pusat Bantuan</a>
           <Link className="text-outline hover:text-primary text-xs transition-colors" to="#">Hubungi Dukungan</Link>
         </div>
       </div>

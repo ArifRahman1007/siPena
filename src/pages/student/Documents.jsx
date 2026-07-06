@@ -331,7 +331,7 @@ export default function Documents() {
         <div className="mt-6 text-center">
           <p className="text-xs text-on-surface-variant">
             Butuh bantuan?{' '}
-            <Link className="text-primary font-semibold hover:underline" to="#">Hubungi Pusat Bantuan</Link>
+            <a className="text-primary font-semibold hover:underline" href="https://wa.me/6285624963293?text=Halo%20Admin%20PPDB%20SiPena%2C%20saya%20butuh%20bantuan%20terkait%20pendaftaran." target="_blank" rel="noreferrer">Hubungi Pusat Bantuan</a>
           </p>
         </div>
       </main>

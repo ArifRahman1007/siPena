@@ -393,7 +393,7 @@ export default function Landing() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
             {[
               { icon: 'phone',       label: 'Telepon',  value: '(0262) 123-4567',              href: 'tel:+62621234567' },
-              { icon: 'chat',        label: 'WhatsApp', value: '0812-3456-7890',               href: 'https://wa.me/628123456789' },
+              { icon: 'chat',        label: 'WhatsApp', value: '0856-2496-3293',               href: 'https://wa.me/6285624963293' },
               { icon: 'location_on', label: 'Alamat',   value: 'Jl. Nusa Indah No. 33, Garut',  href: 'https://maps.google.com/?q=SMK+YPPT+Garut' },
             ].map((item, i) => (
               <motion.a
